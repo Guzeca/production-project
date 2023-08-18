@@ -24,11 +24,11 @@ module.exports = {
     ],
     rules: {
         'linebreak-style': 0,
-        'react/jsx-indent': [2, 4],
+        'react/jsx-indent': [2, 2],
         'react/jsx-indent-props': [2, 4],
         indent: [2, 4],
         'react/jsx-filename-extension': [
-            2, { extensions: ['.js', '.jsx', '.tsx'],},
+            2, { extensions: ['.js', '.jsx', '.tsx'], },
         ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
