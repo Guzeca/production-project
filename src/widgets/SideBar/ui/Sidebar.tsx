@@ -3,13 +3,13 @@ import { classNames } from 'shared/lib/ClassNames/classNames';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { Button } from 'shared/ui/Button/Button';
-import cls from './SideBar.module.scss';
+import cls from './Sidebar.module.scss';
 
-interface SideBarProps {
-   className?: string;
+interface SidebarProps {
+    className?: string;
 }
 
-export const SideBar = ({ className }: SideBarProps) => {
+export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
 
     const onToggle = () => {
@@ -17,8 +17,11 @@ export const SideBar = ({ className }: SideBarProps) => {
     };
 
     return (
-        <div className={classNames(cls.SideBar, { [cls.collapsed]: collapsed }, [className])}>
-            <Button onClick={onToggle}>
+        <div
+            data-testid="sidebar"
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
+        >
+            <Button data-testid="sidebar-toggle" onClick={onToggle}>
                 toggle
             </Button>
             <div className={cls.switchers}>

@@ -1,3 +1,3 @@
-import { LoadPage } from "./ui/LoadPage";
+import { LoadPage } from './ui/LoadPage';
 
 export { LoadPage };

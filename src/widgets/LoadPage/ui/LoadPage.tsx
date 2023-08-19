@@ -1,15 +1,13 @@
 import { Loader } from 'shared/ui/Loader';
-import cls from './LoadPage.module.scss';
 import { classNames } from 'shared/lib/ClassNames/classNames';
+import cls from './LoadPage.module.scss';
 
 interface LoadPageProps {
    className?: string;
 }
 
-export const LoadPage = ({ className }: LoadPageProps) => {
-   return (
-      <div className={classNames(cls.LoadPage, {}, [className])}>
+export const LoadPage = ({ className }: LoadPageProps) => (
+    <div className={classNames(cls.LoadPage, {}, [className])}>
         <Loader />
-      </div>
-   )
-}
+    </div>
+);

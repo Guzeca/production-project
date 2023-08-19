@@ -6,7 +6,7 @@ import Dark from 'shared/assets/icons/theme-dark.svg';
 import Light from 'shared/assets/icons/theme-light.svg';
 
 interface ThemeSwitcherProps {
-    className?: string;
+  className?: string;
 }
 
 export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
