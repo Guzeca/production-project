@@ -1,6 +1,6 @@
 import { Navbar } from 'widgets/Navbar';
+import { Sidebar } from 'widgets/Sidebar/ui/Sidebar';
 import { classNames } from 'shared/lib/ClassNames/classNames';
-import { Sidebar } from 'widgets/Sidebar';
 import { Suspense } from 'react';
 import { AppRouter } from './providers/router';
 import { useTheme } from './providers/ThemeProvider';
