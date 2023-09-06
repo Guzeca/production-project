@@ -1,5 +1,5 @@
 import { Navbar } from 'widgets/Navbar';
-import { Sidebar } from 'widgets/Sidebar/ui/Sidebar';
+import { Sidebar } from 'widgets/Sidebar';
 import { classNames } from 'shared/lib/ClassNames/classNames';
 import { Suspense } from 'react';
 import { AppRouter } from './providers/router';

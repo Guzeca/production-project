@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import { classNames } from 'shared/lib/ClassNames/classNames';
+import { useState } from 'react';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { Button } from 'shared/ui/Button/Button';
@@ -12,7 +12,6 @@ interface SidebarProps {
 
 export const Sidebar = ({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
-
     const { t } = useTranslation();
 
     const onToggle = () => {
