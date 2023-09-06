@@ -1,5 +1,5 @@
 import { Navbar } from 'widgets/Navbar';
-// import { Sidebar } from 'widgets/Sidebar/ui/Sidebar';
+import { Sidebar } from 'widgets/Sidebar/ui/Sidebar';
 import { classNames } from 'shared/lib/ClassNames/classNames';
 import { Suspense } from 'react';
 import { AppRouter } from './providers/router';
@@ -15,7 +15,7 @@ export const App = () => {
             <Suspense fallback="">
                 <Navbar />
                 <div className="content-page">
-                    {/* <Sidebar /> */}
+                    <Sidebar />
                     <AppRouter />
                 </div>
             </Suspense>
