@@ -1,0 +1,19 @@
+{
+  "snapshotDelay": 2000,
+  "source": "build",
+  "destination": "build-snap",
+  "publicPath": "/",
+  "skipThirdPartyRequests": true,
+  "crawlDelay": 50,
+  "include": [],
+  "exclude": [],
+  "inlineCss": false,
+  "inlineJs": false,
+  "removeStyleTags": true,
+  "removeLinkTags": false,
+  "rewriteUrl": null,
+  "customSnapshotsDir": null,
+  "executeScript": null,
+  "executeAsyncScript": null,
+  "postProcessHtml": null
+}
